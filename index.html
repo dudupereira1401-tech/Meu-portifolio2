@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo pereira - estudante | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<header class="header">
+    <a href="#" class="logo">&lt;Dev/Eduardo pereira&gt;</a>
+    <nav class="nav">
+        </nav>
+
+    <div class="lang-selector">
+        <button id="lang-br" class="lang-btn active-lang" data-lang="pt" title="Português">
+            <img src = 'bandeira brasil.png' alt="ícone" width="30" height="20">
+            🇧🇷 </button>
+        <span>|</span>
+        <button id="lang-en" class="lang-btn" data-lang="en" title="English">
+            <img src = 'bandeira reino unido.png' alt="ícone" width="30" height="20">
+            🇺k </button>
+    </div>
+
+    <button id="mode-toggle" title="Alternar Modo Escuro/Claro">
+        <i class="fas fa-sun"></i> 
+    </button>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="greeting" data-key="heroGreeting">Olá, eu sou</p>
+        <h1 data-key="heroName">Eduardo pereira</h1>
+        <p class="bio" data-key="heroBio">Estudando para criar soluções elegantes e eficientes. Com foco em [Sua Linguagem Principal] e [Seu Framework Principal].</p>
+        <a href="#projetos" class="btn primary-btn" data-key="heroButton">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills section">
+        <h2>Minhas Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <p>HTML5 & CSS3</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+            <div class="skill-item">
+                <p>JavaScript (ES6+)</p>
+                <div class="bar-container"><div class="bar" data-percent="50"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>Python / Django</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>oratória</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+             <div class="skill-item">
+                <p>Trabalho em equipe</p>
+                <div class="bar-container"><div class="bar" data-percent="80"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects section">
+        <h2>Meus Projetos de Destaque</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-overlay">
+                    <h3>site de alimentação saudavel</h3>
+                    <p>App Front-End feito com html e css. Foco em ensinar como as pessoas podem se alimentar de maneira saudável.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn">Demo</a>
+                        <a href="#" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-overlay">
+                    <h3>Programa de cotação real-dolar</h3>
+                    <p>Feito em pyton para cotações simples .</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn">Documentação</a>
+                        <a href="#" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-overlay">
+                    <h3>Programa de converção de temperatura celsius-kelvins</h3>
+                    <p>Feito em pyton para converção em tempo real entre medidas de temperatura.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn small-btn">Ver Site</a>
+                        <a href="#" target="_blank" class="btn small-btn outline-btn"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact section">
+        <h2>Ficou interessado?</h2>
+        <p>Entre em contato para orçamentos, parcerias ou apenas para conversar.</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+            <p id="form-message" class="message-feedback"></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Eduardo pereira. Feito com muito código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html
